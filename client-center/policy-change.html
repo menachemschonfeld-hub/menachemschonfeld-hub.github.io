@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy Change Request | SafeSide Insurance — SafeSide Insurance</title>
+<meta name="description" content="Request changes to your existing policy — add or remove vehicles, change limits, update addresses, add locations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="icon" type="image/png" href="../assets/logo/safeside-logo.png">
+</head>
+<body>
+
+<div id="nav-mount"></div>
+
+
+  <div id="nav-mount"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../">Home</a><span>/</span><a href="./">Client Center</a><span>/</span><span>Policy Change</span>
+      </div>
+      <span class="eyebrow">— Update your policy</span>
+      <h1>Make changes to your <em>existing policy</em>.</h1>
+      <p class="page-header-meta">Add a vehicle, increase a limit, change your address, add a location, update your business operations — anything that needs to change on an active policy.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <form data-form="policyChange" id="policy-change-form">
+          <div class="form-group">
+            <label for="pc-name">Your name</label>
+            <input type="text" id="pc-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pc-email">Email</label>
+              <input type="email" id="pc-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="pc-phone">Phone</label>
+              <input type="tel" id="pc-phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pc-policy">Policy number (if known)</label>
+            <input type="text" id="pc-policy" name="policy_number">
+          </div>
+          <div class="form-group">
+            <label>What kind of change?</label>
+            <div class="form-radio-group">
+              <label class="form-radio-option"><input type="radio" name="change_type" value="address" required><span class="form-radio-option-label">Address change</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="add_vehicle"><span class="form-radio-option-label">Add / Remove vehicle</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="add_driver"><span class="form-radio-option-label">Add / Remove driver</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="limit_change"><span class="form-radio-option-label">Change a limit</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="add_location"><span class="form-radio-option-label">Add a location</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="add_property"><span class="form-radio-option-label">Add property / equipment</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="business_change"><span class="form-radio-option-label">Business / operations change</span></label>
+              <label class="form-radio-option"><input type="radio" name="change_type" value="other"><span class="form-radio-option-label">Something else</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pc-effective">Effective date for change</label>
+            <input type="date" id="pc-effective" name="effective_date" required>
+          </div>
+          <div class="form-group">
+            <label for="pc-details">Describe the change</label>
+            <textarea id="pc-details" name="details" required placeholder="As much detail as you can — what's changing, why, and any documents we should reference."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-gold" style="flex: 1;">Submit change request</button>
+          </div>
+          <div class="form-success"><strong>Request received.</strong> A producer will follow up within 1 business day to confirm the change with the carrier.</div>
+          <div class="form-error"><strong>Something went wrong.</strong> Please call us at (845) 364-0000.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+
+<div id="footer-mount"></div>
+
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

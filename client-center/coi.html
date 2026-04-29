@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Certificate of Insurance | SafeSide Insurance — SafeSide Insurance</title>
+<meta name="description" content="Request a certificate of insurance (COI) for a landlord, vendor, client, or job site. 24-hour turnaround, rush available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="icon" type="image/png" href="../assets/logo/safeside-logo.png">
+</head>
+<body>
+
+<div id="nav-mount"></div>
+
+
+  <div id="nav-mount"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../">Home</a><span>/</span><a href="./">Client Center</a><span>/</span><span>Request COI</span>
+      </div>
+      <span class="eyebrow">— Certificate of insurance</span>
+      <h1>Request a <em>certificate of insurance</em>.</h1>
+      <p class="page-header-meta">Need a COI for a landlord, vendor, client, or job site? Most requests are issued within 24 hours. Rush available if needed.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <form data-form="coi" id="coi-form">
+          <div class="form-group">
+            <label for="coi-name">Your name</label>
+            <input type="text" id="coi-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="coi-email">Email</label>
+              <input type="email" id="coi-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="coi-phone">Phone</label>
+              <input type="tel" id="coi-phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="coi-business">Insured / Business name</label>
+            <input type="text" id="coi-business" name="insured_name" required>
+            <span class="help">Exactly as it appears on your policy.</span>
+          </div>
+          <div class="form-group">
+            <label for="coi-holder">Certificate holder name &amp; address</label>
+            <textarea id="coi-holder" name="holder_info" required placeholder="The name and full address of the party requesting the certificate."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Special endorsements required?</label>
+            <div class="form-radio-group">
+              <label class="form-radio-option"><input type="checkbox" name="endorsements[]" value="additional_insured"><span class="form-radio-option-label">Additional Insured</span></label>
+              <label class="form-radio-option"><input type="checkbox" name="endorsements[]" value="waiver_subrogation"><span class="form-radio-option-label">Waiver of Subrogation</span></label>
+              <label class="form-radio-option"><input type="checkbox" name="endorsements[]" value="primary_noncontrib"><span class="form-radio-option-label">Primary &amp; Non-Contributory</span></label>
+              <label class="form-radio-option"><input type="checkbox" name="endorsements[]" value="loss_payee"><span class="form-radio-option-label">Loss Payee / Mortgagee</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="coi-contract">Upload contract or insurance requirements (optional)</label>
+            <input type="text" id="coi-contract" name="contract_info" placeholder="Or paste the relevant insurance requirements here">
+            <span class="help">If your contract specifies exact wording or limits, send it to us so we match it.</span>
+          </div>
+          <div class="form-group">
+            <label>How urgent?</label>
+            <div class="form-radio-group">
+              <label class="form-radio-option"><input type="radio" name="urgency" value="standard" checked required><span class="form-radio-option-label">Standard (24h)</span></label>
+              <label class="form-radio-option"><input type="radio" name="urgency" value="rush"><span class="form-radio-option-label">Rush (4h)</span></label>
+              <label class="form-radio-option"><input type="radio" name="urgency" value="immediate"><span class="form-radio-option-label">Immediate (1h)</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="coi-notes">Special instructions</label>
+            <textarea id="coi-notes" name="notes" placeholder="Anything else we should know?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-gold" style="flex: 1;">Request certificate</button>
+          </div>
+          <div class="form-success"><strong>Request received.</strong> We'll send the certificate to your email — and to the certificate holder, if you've asked us to.</div>
+          <div class="form-error"><strong>Something went wrong.</strong> Please call us at (845) 364-0000 or email coi@safesideins.com.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+
+<div id="footer-mount"></div>
+
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

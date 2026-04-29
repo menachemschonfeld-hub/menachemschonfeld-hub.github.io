@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote | SafeSide Insurance — SafeSide Insurance</title>
+<meta name="description" content="Request an insurance quote — personal or commercial. A producer reaches out within 24 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="icon" type="image/png" href="../assets/logo/safeside-logo.png">
+</head>
+<body>
+
+<div id="nav-mount"></div>
+
+
+  <div id="nav-mount"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../">Home</a><span>/</span><a href="./">Contact</a><span>/</span><span>Request a Quote</span>
+      </div>
+      <span class="eyebrow">— Request a quote</span>
+      <h1>Tell us what you <em>need to protect</em>.</h1>
+      <p class="page-header-meta">A few questions, and a producer reaches out within 24 hours to gather details and quote across our markets.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-step-progress">
+          <div class="form-step-progress-item active" data-step-progress="1">
+            <div class="form-step-progress-bar"></div>
+            <span class="form-step-progress-label">01 · Type</span>
+          </div>
+          <div class="form-step-progress-item" data-step-progress="2">
+            <div class="form-step-progress-bar"></div>
+            <span class="form-step-progress-label">02 · Details</span>
+          </div>
+          <div class="form-step-progress-item" data-step-progress="3">
+            <div class="form-step-progress-bar"></div>
+            <span class="form-step-progress-label">03 · You</span>
+          </div>
+          <div class="form-step-progress-item" data-step-progress="4">
+            <div class="form-step-progress-bar"></div>
+            <span class="form-step-progress-label">04 · Done</span>
+          </div>
+        </div>
+
+        <form data-form="quote" id="quote-form">
+
+          <!-- STEP 1 -->
+          <div class="form-step active" data-step="1">
+            <div class="form-group">
+              <label>What kind of insurance are you looking for?</label>
+              <div class="form-radio-group">
+                <label class="form-radio-option"><input type="radio" name="quote_type" value="personal" required><span class="form-radio-option-label">Personal (home, life, umbrella)</span></label>
+                <label class="form-radio-option"><input type="radio" name="quote_type" value="commercial"><span class="form-radio-option-label">Commercial (business)</span></label>
+                <label class="form-radio-option"><input type="radio" name="quote_type" value="both"><span class="form-radio-option-label">Both personal &amp; commercial</span></label>
+                <label class="form-radio-option"><input type="radio" name="quote_type" value="not_sure"><span class="form-radio-option-label">I'm not sure — help me figure it out</span></label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-gold" data-step-next="2" style="flex: 1;">Continue</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="form-step" data-step="2">
+            <div class="form-group">
+              <label>Which lines of coverage? (Select all that apply)</label>
+              <div class="form-radio-group">
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="homeowners"><span class="form-radio-option-label">Homeowners</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="life"><span class="form-radio-option-label">Life</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="umbrella"><span class="form-radio-option-label">Umbrella</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="valuables"><span class="form-radio-option-label">Valuables &amp; Collections</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="bop"><span class="form-radio-option-label">Business Owners Policy</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="general_liability"><span class="form-radio-option-label">General Liability</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="workers_comp"><span class="form-radio-option-label">Workers' Compensation</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="cyber"><span class="form-radio-option-label">Cyber Liability</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="professional_liability"><span class="form-radio-option-label">Professional Liability</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="property"><span class="form-radio-option-label">Commercial Property</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="d_and_o"><span class="form-radio-option-label">D&amp;O / Management Liability</span></label>
+                <label class="form-radio-option"><input type="checkbox" name="lines[]" value="other"><span class="form-radio-option-label">Something else / not sure</span></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-current">Currently insured?</label>
+              <div class="form-radio-group">
+                <label class="form-radio-option"><input type="radio" name="currently_insured" value="yes"><span class="form-radio-option-label">Yes — looking to compare</span></label>
+                <label class="form-radio-option"><input type="radio" name="currently_insured" value="no"><span class="form-radio-option-label">No — first-time buyer</span></label>
+                <label class="form-radio-option"><input type="radio" name="currently_insured" value="lapsed"><span class="form-radio-option-label">Was insured, now lapsed</span></label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-back btn-ghost" data-step-prev="1">Back</button>
+              <button type="button" class="btn btn-gold" data-step-next="3">Continue</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="form-step" data-step="3">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="quote-first">First name</label>
+                <input type="text" id="quote-first" name="first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="quote-last">Last name</label>
+                <input type="text" id="quote-last" name="last_name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="quote-email">Email</label>
+                <input type="email" id="quote-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="quote-phone">Phone</label>
+                <input type="tel" id="quote-phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-business">Business name (if commercial)</label>
+              <input type="text" id="quote-business" name="business_name">
+            </div>
+            <div class="form-group">
+              <label for="quote-zip">ZIP code</label>
+              <input type="text" id="quote-zip" name="zip" required pattern="[0-9]{5}" maxlength="5">
+            </div>
+            <div class="form-group">
+              <label for="quote-context">Anything else we should know?</label>
+              <textarea id="quote-context" name="context" placeholder="Property details, business operations, prior claims, contractual requirements, deadlines — any context helps."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Best time to reach you</label>
+              <div class="form-radio-group">
+                <label class="form-radio-option"><input type="radio" name="best_time" value="morning"><span class="form-radio-option-label">Morning</span></label>
+                <label class="form-radio-option"><input type="radio" name="best_time" value="afternoon"><span class="form-radio-option-label">Afternoon</span></label>
+                <label class="form-radio-option"><input type="radio" name="best_time" value="evening"><span class="form-radio-option-label">Evening</span></label>
+                <label class="form-radio-option"><input type="radio" name="best_time" value="email_only"><span class="form-radio-option-label">Email only please</span></label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-back btn-ghost" data-step-prev="2">Back</button>
+              <button type="submit" class="btn btn-gold">Submit quote request</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 (success) -->
+          <div class="form-step" data-step="4">
+            <div style="text-align: center; padding: 40px 0;">
+              <div style="font-family: var(--font-display); font-style: italic; font-size: 18px; color: var(--brand-gold); margin-bottom: 16px;">— Received</div>
+              <h2 style="font-family: var(--font-display); font-size: 32px; font-weight: 500; margin: 0 0 16px;">Thank you. We'll be in touch.</h2>
+              <p style="font-size: 16px; color: var(--mute); line-height: 1.6; max-width: 480px; margin: 0 auto;">A SafeSide producer will reach out within 24 hours — usually faster — to gather the details we need to quote across our markets. For urgent needs, call <a href="tel:8453640000" style="color: var(--brand-navy);">(845) 364-0000</a>.</p>
+            </div>
+          </div>
+
+          <div class="form-error" style="margin-top: 24px;"><strong>Something went wrong.</strong> Please call us at (845) 364-0000 and we'll take it from there.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+
+<div id="footer-mount"></div>
+
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

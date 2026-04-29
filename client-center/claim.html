@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Claim | SafeSide Insurance — SafeSide Insurance</title>
+<meta name="description" content="Report a new insurance claim — property, liability, auto, workers' comp, or cyber. SafeSide manages claims with the carrier on your behalf.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="icon" type="image/png" href="../assets/logo/safeside-logo.png">
+</head>
+<body>
+
+<div id="nav-mount"></div>
+
+
+  <div id="nav-mount"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../">Home</a><span>/</span><a href="./">Client Center</a><span>/</span><span>Submit a Claim</span>
+      </div>
+      <span class="eyebrow">— Submit a claim</span>
+      <h1>Report a loss. We <em>handle it from here</em>.</h1>
+      <p class="page-header-meta">Tell us what happened. We'll open the claim with the carrier, advocate during the adjustment, and stay with you until it's resolved.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <p style="margin-bottom: 32px; font-size: 15px; color: var(--mute); line-height: 1.6;"><strong style="color: var(--ink);">For emergencies — fire, theft, ongoing flooding, vehicle accidents — call us immediately at <a href="tel:8453640000" style="color: var(--brand-navy);">(845) 364-0000</a> or call your carrier directly.</strong> This form is for non-emergency claim reporting.</p>
+
+        <form data-form="claim" id="claim-form">
+          <div class="form-group">
+            <label for="claim-name">Your name</label>
+            <input type="text" id="claim-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="claim-email">Email</label>
+              <input type="email" id="claim-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="claim-phone">Phone</label>
+              <input type="tel" id="claim-phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="claim-policy">Policy number (if known)</label>
+            <input type="text" id="claim-policy" name="policy_number">
+            <span class="help">If you can't find it, that's fine — we'll look it up.</span>
+          </div>
+          <div class="form-group">
+            <label>What type of claim?</label>
+            <div class="form-radio-group">
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="property" required><span class="form-radio-option-label">Property damage</span></label>
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="liability"><span class="form-radio-option-label">Liability / Lawsuit</span></label>
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="auto"><span class="form-radio-option-label">Vehicle / Auto</span></label>
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="workers_comp"><span class="form-radio-option-label">Workers' comp</span></label>
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="cyber"><span class="form-radio-option-label">Cyber / Data breach</span></label>
+              <label class="form-radio-option"><input type="radio" name="claim_type" value="other"><span class="form-radio-option-label">Something else</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="claim-date">Date of loss</label>
+            <input type="date" id="claim-date" name="loss_date" required>
+          </div>
+          <div class="form-group">
+            <label for="claim-description">Describe what happened</label>
+            <textarea id="claim-description" name="description" required placeholder="As much detail as you can — when, where, what was damaged or what occurred, who was involved, any witnesses, photos taken, police/fire response."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-gold" style="flex: 1;">Submit claim report</button>
+          </div>
+          <div class="form-success"><strong>Claim received.</strong> A producer will contact you within 4 business hours to walk through next steps. For emergencies, call (845) 364-0000.</div>
+          <div class="form-error"><strong>Something went wrong.</strong> Please call us at (845) 364-0000 to file the claim by phone.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+
+<div id="footer-mount"></div>
+
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
